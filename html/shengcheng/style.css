@@ -1,0 +1,135 @@
+body,html{
+	height:1782px;
+	width:1350px;
+	margin: 0px;
+	padding:0px;
+	/* overflow:scroll; */
+	overflow-x:hidden;
+}
+
+.back{
+	background: -webkit-linear-gradient(
+		top, #FAFDE7,#E7B9B1,#DEA8CA
+	);
+	height:100%;
+	width:100%;
+	margin: 0;
+	padding:0;
+}
+
+.title{
+	top:8%;
+	left:5.5%;
+	width:86%;
+	height:20%;	
+	position:absolute;
+}
+.ai{
+	margin-left: 50px;
+}
+
+.center{
+	top:15%;
+	left:5.5%;
+	position:relative;
+}
+
+.center-bg{
+	width:1195px; 
+	height:695px;
+	z-index:1;
+	position:absolute;
+}
+
+.center-brand{
+	position:absolute;
+	z-index: 2;
+	top:50px;
+	left:50px;
+}
+
+.option{
+	z-index:2;
+	top:50px;
+	left:680px;
+	position: absolute;
+}
+.hairoption{
+	left:48%;
+	top:150px;
+	height:300px;
+	width:35%;
+	position:absolute;
+	z-index:2;
+}
+.options{
+	width:90%;
+	height:90%;
+}
+.tail{
+	z-index:1;
+	top:161%;
+	left:13%;
+	position: absolute;
+}
+.generate{
+	position: absolute;
+	z-index:2;
+	top:700%;
+	left:42%;
+}
+.download{
+	position: absolute;
+	z-index:2;
+	top:700%;
+	left:59.5%;
+}
+.coloring{
+	position: relative;
+	z-index:2;
+	top:446px;
+	left:72%;
+}
+.bubble{
+	position:relative;
+	z-index:2;
+	top:920px;
+	left:230px;
+}
+.bubble1{
+	position:relative;
+	z-index:2;
+	top:1150px;
+	left:400px;
+}
+.bubble3{
+	position:relative;
+	z-index:2;
+	top:920px;
+	left:470px;
+}
+.bubble4{
+	position:relative;
+	z-index:2;
+	top:1080px;
+	left:10px;
+}
+.bubble5{
+	position:relative;
+	z-index:2;
+	top:1200px;
+	left:-200px;
+}
+.bubble6{
+	position:relative;
+	z-index:2;
+	top:1260px;
+	left:-100px;
+}
+.bubble7{
+	position:relative;
+	z-index:2;
+	top:1300px;
+	left:-400px;
+}
+
