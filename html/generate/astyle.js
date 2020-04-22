@@ -37,11 +37,6 @@ function createParticle (x, y, type) {
       particle.style.background = `hsl(${Math.random() * 90 + 270}, 70%, 60%)`;
       particle.style.border = '1px solid white';
       break;
-    case 'emoji':
-      particle.innerHTML = ['❤','🧡','💛','💚','💙','💜','🤎'][Math.floor(Math.random() * 7)];
-      particle.style.fontSize = `${Math.random() * 24 + 10}px`;
-      width = height = 'auto';
-      break;
     case 'duck':
       particle.style.backgroundImage = 'url(img/duck.jpeg)';
       break;
@@ -94,4 +89,22 @@ function removeParticle (e) {
 
 if (document.body.animate) {
   document.querySelectorAll('button').forEach(button => button.addEventListener('click', pop));
+}
+
+
+
+var wImg = document.getElementById("wrap").getElementsByTagName("img");
+wImg[0].className = 'on';
+for(var i=0;i<wImg.length;i++){
+	wImg[i].onclick = function(){
+		var siblings = this.parentNode.children;
+		for (var j=0;j<siblings.length;j++ )
+		{
+			siblings[j].className = '';
+			siblings[j].src = 'img/unselected.png';
+			
+		}
+		this.className = 'on';		
+		this.src = 'img/selected.png';
+	}
 }

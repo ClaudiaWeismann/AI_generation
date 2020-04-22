@@ -62,13 +62,17 @@ body,html{
 	position:absolute;
 	z-index:2;
 }
+.hairoption img{
+	margin-top: 10px;
+	margin-right: 40px;
+}
 .options{
 	width:90%;
 	height:90%;
 }
 .tail{
 	z-index:1;
-	top:161%;
+	top:168%;
 	left:13%;
 	position: absolute;
 }
@@ -192,3 +196,6 @@ particle {
   background-size: contain;
   z-index: 2;
 }
+
+
+
