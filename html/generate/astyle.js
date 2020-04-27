@@ -34,29 +34,25 @@ function createParticle (x, y, type) {
   
   switch (type) {
     case 'square':
-      particle.style.background = `hsl(${Math.random() * 90 + 270}, 70%, 60%)`;
-      particle.style.border = '1px solid white';
-      break;
+		particle.style.background = `hsl(${Math.random() * 90 + 270}, 70%, 60%)`;
+		particle.style.borderRadius = '50%';
+		break;
     case 'duck':
-      particle.style.backgroundImage = 'url(img/duck.jpeg)';
-      break;
+		particle.style.backgroundImage = 'url(img/bubble5.png)';
+		break;
 	case 'bubble7':
 		particle.style.backgroundImage = 'url(img/bubble7.png)';
 	    break;
     case 'shadow':
-      var color = `hsl(${Math.random() * 10 + 300}, 50%, 50%)`;
-      particle.style.boxShadow = `0 0 ${Math.floor(Math.random() * 10 + 10)}px ${color}`;
-      particle.style.background = color;
-      particle.style.borderRadius = '50%';
-      width = height = Math.random() * 5 + 4;
-      break;
+		var color = `hsl(${Math.random() * 10 + 300}, 50%, 50%)`;
+		particle.style.boxShadow = `0 0 ${Math.floor(Math.random() * 10 + 10)}px ${color}`;
+		particle.style.background = color;
+		particle.style.borderRadius = '50%';
+		width = height = Math.random() * 5 + 4;
+		break;
     case 'line':
-      var color = `hsl(${Math.random() * 90 + 90}, 70%, 50%)`;
-      particle.style.background = 'black';
-      height = 1;
-      rotation += 1000;
-      delay = Math.random() * 1000;
-      break;
+		particle.style.backgroundImage = 'url(img/bubble6.png)';
+		break;
 	case 'xin':
 		particle.style.backgroundImage = 'url(img/xin.png)';
 	    break;
@@ -64,6 +60,7 @@ function createParticle (x, y, type) {
 		particle.style.backgroundImage = 'url(img/biu.png)';
 		break;
   }
+  
   
   particle.style.width = `${width}px`;
   particle.style.height = `${height}px`;
