@@ -90,18 +90,15 @@ if (document.body.animate) {
 
 
 
-var wImg = document.getElementById("wrap").getElementsByTagName("img");
-wImg[0].className = 'on';
+var wImg = document.getElementById("wrap").getElementsByTagName("button");
 for(var i=0;i<wImg.length;i++){
 	wImg[i].onclick = function(){
 		var siblings = this.parentNode.children;
 		for (var j=0;j<siblings.length;j++ )
 		{
-			siblings[j].className = '';
-			siblings[j].src = 'img/unselected.png';
+			siblings[j].className = 'btn';
 			
 		}
 		this.className = 'on';		
-		this.src = 'img/selected.png';
 	}
 }

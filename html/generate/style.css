@@ -5,8 +5,11 @@ body,html{
 	padding:0px;
 	/* overflow:scroll; */
 	overflow-x:hidden;
-	
-	
+}
+
+@font-face{
+	font-family:'义启动漫体';
+	src:url(义启动漫体.ttf);
 }
 *{
 	margin:0;
@@ -204,6 +207,9 @@ particle {
 }
 
 .btn{
+	font-family: 义启动漫体;
+/* 	color:#fff; */
+	font-size: 20px;
 	background-image: url(img/unselected.png);
 	background-repeat: no-repeat;
 	background-color: transparent;
@@ -215,7 +221,11 @@ particle {
 	margin-top: 15px;
 }
 .on{
-	background-image: url(img/unselected.png);
+	font-family: 义启动漫体;
+	/* color:#fff; */
+	font-weight:bold;
+	font-size: 25px;
+	background-image: url(img/selected.png);
 	background-repeat: no-repeat;
 	background-color: transparent;
 	outline:none;
