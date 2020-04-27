@@ -1,10 +1,16 @@
 body,html{
 	height:1782px;
-	width:1350px;
+	width:100%;
 	margin: 0px;
 	padding:0px;
 	/* overflow:scroll; */
 	overflow-x:hidden;
+	
+	
+}
+*{
+	margin:0;
+	padding:0;
 }
 
 .back{
@@ -72,7 +78,7 @@ body,html{
 }
 .tail{
 	z-index:1;
-	top:168%;
+	top:1110px;
 	left:13%;
 	position: absolute;
 }
@@ -156,7 +162,7 @@ body,html{
 	background-color: transparent;
 	outline:none;
 	border:0;
-	width:60px;
+	width:65px;
 	height:60px;
 }
 .bubble6{
@@ -197,5 +203,25 @@ particle {
   z-index: 2;
 }
 
-
-
+.btn{
+	background-image: url(img/unselected.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	outline:none;
+	border:0;
+	width:110px;
+	height:48px;
+	margin-right: 40px;
+	margin-top: 15px;
+}
+.on{
+	background-image: url(img/unselected.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	outline:none;
+	border:0;
+	width:110px;
+	height:48px;
+	margin-right: 40px;
+	margin-top: 15px;
+}
