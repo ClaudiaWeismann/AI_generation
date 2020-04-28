@@ -208,7 +208,7 @@ particle {
 
 .btn{
 	font-family: 义启动漫体;
-/* 	color:#fff; */
+	color:#814D89;
 	font-size: 20px;
 	background-image: url(img/unselected.png);
 	background-repeat: no-repeat;
@@ -222,7 +222,7 @@ particle {
 }
 .on{
 	font-family: 义启动漫体;
-	/* color:#fff; */
+	color:#814D89;
 	font-weight:bold;
 	font-size: 25px;
 	background-image: url(img/selected.png);
