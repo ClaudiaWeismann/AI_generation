@@ -108,3 +108,12 @@ if (document.body.animate) {
 	document.getElementsByClassName("bubble5")[0].addEventListener('click',pop);
 	document.getElementsByClassName("bubble6")[0].addEventListener('click',pop);
 }
+
+var navigation = document.getElementsByClassName("navigation")[0];
+var siblings = document.getElementsByTagName("a")[1];
+navigation.onmouseout = function(){
+	siblings.className = 'selected';
+}
+navigation.onmouseover = function(){
+	siblings.className = 'navigationlink';
+}

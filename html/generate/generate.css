@@ -68,14 +68,30 @@ body,html{
 	justify-content:center;
 	align-items:center;
 }
+.selected{
+	border-radius: 35px 35px 0px 0px;
+	font-family: 义启动漫体;
+	font-size: 32px;
+	width:50%;
+	height:80%;
+	display:block;
+	margin-right:30px;
+	text-decoration:none;	
+	position: relative;
+	top:20%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background:#D9AECA;
+	color:#fff;
+}
 .navigationlink:hover{
 	background:#D9AECA;
 	color:#fff;
 }
 .avatar{
 	border-radius: 50%;
-	position:absolute;
-	
+	position:absolute;	
 	width:4%;
 	height:80%;
 	right:5%;
@@ -87,25 +103,28 @@ body,html{
 }
 .dropdown-content{
 	z-index:10;
-	visibility: hidden;
-	background-color: #fff;
-	border:1px solid #FAF9F5;
-	height:16.45%;
-	width:10%;
+	visibility: hidden;	
+	height:25%;
+	width:13%;
 	top:10%;
-	right:3%;
+	right:1%;
 	position:absolute;
 }
 .dropdown-content a{
-	text-align: center;
+	padding-top: 3%;
+	color:#dcd6da;
+	font-size: 22px;
+	height:20%;
+	background-color: #fff;
 	border-bottom: 1px dotted pink;
-	display:block;
 	font-family: 义启动漫体;
 	text-decoration:none;
+	display: block;
+	text-align:center;
 }
 .dropdown-content a:hover{
 	background-color: #FAF9F5;
-	color:#D9AECA;
+	color:#ce89b5;
 }
 .center{
 	width:66%;
@@ -210,8 +229,8 @@ body,html{
 	font-size: 25px;
 	outline:none;
 	border:0;
-	width:80px;
-	height:30px;
+	width:23%;
+	height:16%;
 	margin-right: 30px;
 	margin-top: 20px;
 }
