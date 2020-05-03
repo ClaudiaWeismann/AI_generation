@@ -15,6 +15,7 @@ body,html{
 	src:url(义启动漫体.ttf);
 }
 .title{
+	background-color:#faf7ed;
 	position: relative;
 	width:100%;
 	top:0%;
@@ -220,19 +221,21 @@ body,html{
 	height:16%;
 	margin-right: 30px;
 	margin-top: 15px;
+	z-index: 12;
 }
 .on{
+	position:relative;
 	color:#fff;
 	background-color: #ed9188;
 	font-family: 义启动漫体;
 	font-weight:bold;
-	font-size: 25px;
+	font-size: 24px;
 	outline:none;
 	border:0;
 	width:23%;
 	height:16%;
 	margin-right: 30px;
-	margin-top: 20px;
+	margin-top: 13px;
 }
 .statement{
 	position:absolute;
