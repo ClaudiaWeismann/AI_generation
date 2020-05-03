@@ -1,0 +1,240 @@
+*{
+	margin:0;
+	padding:0;
+}
+body,html{
+	width:100%;
+	height:100%;
+	background: -webkit-linear-gradient(
+		top, #FAF8EC,#ead3c9,#e1bdd5
+	);
+	overflow: hidden;
+}
+@font-face{
+	font-family:'义启动漫体';
+	src:url(义启动漫体.ttf);
+}
+.title{
+	background-color:#faf7ed;
+	position: relative;
+	width:100%;
+	top:0%;
+	height:10%;
+	border-bottom:2px solid #D8B7C8;
+	display: table;
+}
+.tword{
+	cursor:pointer;
+	display: block;
+	font-family: 义启动漫体;
+	font-size: 55px;
+	color:#DEB1AE;
+	position:absolute;
+	width:25%;
+	top:0%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.navigation{
+	bottom:0px;
+	height:70%;
+	width:55%;
+	list-style-type:none;
+	position:absolute;
+	left:23%;
+}
+.li-navi{
+	float:left;
+	height:100%;
+	width:33%;
+	display:flex;
+	justify-content:center;
+	position: relative;
+}
+.navigationlink{
+    border-radius: 35px 35px 0px 0px;	
+	font-family: 义启动漫体;
+	font-size: 32px;
+	width:50%;
+	height:80%;
+	display:block;
+	margin-right:30px;
+	color:#D9AECA;
+	text-decoration:none;	
+	position: relative;
+	top:20%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.selected{
+	border-radius: 35px 35px 0px 0px;
+	font-family: 义启动漫体;
+	font-size: 32px;
+	width:50%;
+	height:80%;
+	display:block;
+	margin-right:30px;
+	text-decoration:none;	
+	position: relative;
+	top:20%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background:#D9AECA;
+	color:#fff;
+}
+.navigationlink:hover{
+	background:#D9AECA;
+	color:#fff;
+}
+.avatar{
+	border-radius: 50%;
+	position:absolute;	
+	width:4%;
+	height:80%;
+	right:5%;
+	bottom:1%;
+	cursor: pointer;
+}
+.avatar:hover{
+	border:1px solid pink;
+}
+.brand-img{
+	position:absolute;
+	left:7%;
+	top:5%;
+	width:80%;
+	height:80%;
+}
+.dropdown-content{
+	z-index:10;
+	visibility: hidden;	
+	background-color: #fff;
+	height:25%;
+	width:13%;
+	top:10%;
+	right:1%;
+	position:absolute;
+}
+.unsigned{
+	position:absolute;
+	display: block;
+	left:15%;
+	top:15%;
+	height:15%;
+	width:75%;
+	color:#ce89b5;
+	font-family: 义启动漫体;
+	font-size:25px;
+}
+.dropdown-content button{
+	font-family: 义启动漫体;
+	font-size:22px;
+	width:40%;
+	height:20%;
+	position:absolute;
+	background-color: #dfc3d4;
+	color:#fff;
+	outline:none;
+	border:0;
+	cursor: pointer;
+	border-radius:5px ;
+	top:55%;
+}
+.load{
+	left:7%;
+}
+.regist_title{
+	left:52%;
+}
+.center{
+	width:66%;
+	height:53%;
+	position:relative;
+	margin-top:2%;
+	margin-left:17%;
+	background-color: #faf9f5;
+	border-radius:50px;
+}
+.cword{
+	color:#ce89b5;
+	height:10%;
+	width:50%;
+	top:25%;
+	left:15%;
+	position:absolute;
+	font-family: 义启动漫体;
+	font-size:30px;
+	display:block;
+}
+.return{
+	z-index:2;
+	height:7%;
+	width:10%;
+	position:absolute;
+	bottom:5%;
+	right:10%;
+	color:#d397bd;
+	font-size: 17px;
+	font-family: 义启动漫体;
+	display:block;
+	text-decoration: none;
+}
+.return:hover{
+	text-decoration: underline;
+}
+.statement{
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+.bubble1{
+	position:absolute;
+	top:25%;
+	left:10%;
+}
+.bubble2{
+	position:absolute;
+	top:47%;
+	left:4%;
+}
+.bubble3{
+	position:absolute;
+	top:75%;
+	left:7%;
+}
+.bubble4{
+	position:absolute;
+	top:85%;
+	left:25%;
+}
+.bubble5{
+	position:absolute;
+	top:75%;
+	left:40%;
+}
+.bubble6{
+	position:absolute;
+	top:43%;
+	right:3%;
+}
+.bubble7{
+	position:absolute;
+	top:15%;
+	right:10%;
+	z-index: 2;
+}
+particle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
