@@ -22,10 +22,11 @@ body,html{
 	height:10%;
 	border-bottom:2px solid #D8B7C8;
 	display: table;
+	overflow: hidden;
 }
 .tword{
+	animation:spin 4s ease-in-out infinite;
 	cursor:pointer;
-	display: block;
 	font-family: 义启动漫体;
 	font-size: 55px;
 	color:#DEB1AE;
@@ -36,6 +37,25 @@ body,html{
 	display:flex;
 	justify-content:center;
 	align-items:center;
+}
+.heart{
+	animation:fadeOutIn 4s ease-in-out infinite;
+}
+@keyframes spin {
+  0% {
+    transform:rotate(0);
+  }
+  50%, 100% {
+    transform:rotate(360deg);
+  }
+}
+@keyframes fadeOutIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  70%, 80%,90% {
+    opacity: 1;
+  }
 }
 .navigation{
 	bottom:0px;
@@ -192,15 +212,33 @@ body,html{
 	bottom:0;
 }
 
+#div1{
+	position: absolute;
+	top:10%;
+	height:20%;
+	width:13%;
+}
 .bubble1{
 	position:absolute;
-	top:25%;
-	left:10%;
+	top:0;
+	left:0;
+}
+#div2{
+	position: absolute;
+	top:30%;
+	height:27%;
+	width:13%;
 }
 .bubble2{
 	position:absolute;
-	top:47%;
-	left:4%;
+	top:50%;
+	left:0%;
+}
+#div3{
+	position: absolute;
+	top:70%;
+	height:15%;
+	width:50%;
 }
 .bubble3{
 	position:absolute;
@@ -216,6 +254,13 @@ body,html{
 	position:absolute;
 	top:75%;
 	left:40%;
+}
+#div4{
+	position: absolute;
+	top:10%;
+	left:83%;
+	height:40%;
+	width:12%;
 }
 .bubble6{
 	position:absolute;
