@@ -117,3 +117,41 @@ navigation.onmouseout = function(){
 navigation.onmouseover = function(){
 	siblings.className = 'navigationlink';
 }
+
+
+
+function bubblefloat(a,b,c){
+	var img=document.getElementsByClassName(a)[0];
+	var bubble = document.getElementById(b);
+	var x=c*10;
+	var y=c*10;
+	var xSpeed=c;
+	var ySpeed=c;
+	var h=bubble.offsetHeight;
+	var w=bubble.offsetWidth;
+	function floatimg(){
+		   if(x>w||x<0){
+			   x=x<0?0:w;
+			   xSpeed=-xSpeed;
+		   }else{
+			   x+=xSpeed;
+		   }
+		   if(y>h||y<0){
+				   y=y<0?0:h;
+				   ySpeed=-ySpeed;
+		   }else{
+				   y+=ySpeed;
+		   }
+		   img.style.left=x+"px";
+		   img.style.top=y+"px"
+		   setTimeout(floatimg,50);
+	}
+	floatimg();
+}
+bubblefloat("bubble1","div1",4); 
+bubblefloat("bubble2","div2",3);
+bubblefloat("bubble3","div3",4);
+bubblefloat("bubble4","div3",1.5);
+bubblefloat("bubble5","div3",3);
+bubblefloat("bubble6","div4",2);
+bubblefloat("bubble7","div4",4);
