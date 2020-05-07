@@ -1,0 +1,318 @@
+*{
+	margin:0;
+	padding:0;
+}
+body,html{
+	width:100%;
+	height:100%;
+	background: -webkit-linear-gradient(
+		top, #FAF8EC,#ead3c9,#e1bdd5
+	);
+	overflow: hidden;
+}
+@font-face{
+	font-family:'义启动漫体';
+	src:url(义启动漫体.ttf);
+}
+.title{
+	background-color:#faf7ed;
+	position: relative;
+	width:100%;
+	top:0%;
+	height:10%;
+	border-bottom:2px solid #D8B7C8;
+	display: table;
+	overflow: hidden;
+}
+.tword{
+	animation:spin 4s ease-in-out infinite;
+	cursor:pointer;
+	font-family: 义启动漫体;
+	font-size: 55px;
+	color:#DEB1AE;
+	position:absolute;
+	width:25%;
+	top:0%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.heart{
+	animation:fadeOutIn 4s ease-in-out infinite;
+}
+@keyframes spin {
+  0% {
+    transform:rotate(0);
+  }
+  50%, 100% {
+    transform:rotate(360deg);
+  }
+}
+@keyframes fadeOutIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  70%, 80%,90% {
+    opacity: 1;
+  }
+}
+.navigation{
+	bottom:0px;
+	height:70%;
+	width:55%;
+	list-style-type:none;
+	position:absolute;
+	left:23%;
+}
+.li-navi{
+	float:left;
+	height:100%;
+	width:33%;
+	display:flex;
+	justify-content:center;
+	position: relative;
+}
+.navigationlink{
+    border-radius: 35px 35px 0px 0px;	
+	font-family: 义启动漫体;
+	font-size: 32px;
+	width:50%;
+	height:80%;
+	display:block;
+	margin-right:30px;
+	color:#D9AECA;
+	text-decoration:none;	
+	position: relative;
+	top:20%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.selected{
+	border-radius: 35px 35px 0px 0px;
+	font-family: 义启动漫体;
+	font-size: 32px;
+	width:50%;
+	height:80%;
+	display:block;
+	margin-right:30px;
+	text-decoration:none;	
+	position: relative;
+	top:20%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background:#D9AECA;
+	color:#fff;
+}
+.navigationlink:hover{
+	background:#D9AECA;
+	color:#fff;
+}
+.avatar{
+	border-radius: 50%;
+	position:absolute;	
+	width:4%;
+	height:80%;
+	right:5%;
+	bottom:1%;
+	cursor: pointer;
+}
+.avatar:hover{
+	border:1px solid pink;
+}
+.dropdown-content{
+	z-index:10;
+	visibility: hidden;	
+	height:25%;
+	width:13%;
+	top:10%;
+	right:1%;
+	position:absolute;
+}
+.dropdown-content a{
+	padding-top: 3%;
+	color:#dcd6da;
+	font-size: 22px;
+	height:20%;
+	background-color: #fff;
+	border-bottom: 1px dotted pink;
+	font-family: 义启动漫体;
+	text-decoration:none;
+	display: block;
+	text-align:center;
+}
+.dropdown-content a:hover{
+	background-color: #FAF9F5;
+	color:#ce89b5;
+}
+.brand-img{
+	width:100%;
+	height:100%;
+}
+
+.center{
+	width:66%;
+	height:53%;
+	position:relative;
+	margin-top:2%;
+	margin-left:17%;
+	background-color: #faf9f5;
+	border-radius:50px;
+}
+.abrand{
+	position:absolute;
+	height:60%;
+	width:25%;
+	border:3px dashed #c770b3;
+	top:10%;
+	left:10%;
+}
+.bbrand{
+	position:absolute;
+	height:60%;
+	width:25%;
+	border:3px dashed #c770b3;
+	top:10%;
+	right:10%;
+}
+.colorit{
+	font-family: 义启动漫体;
+	font-size:30px;
+	width:18%;
+	height:17%;
+	position:absolute;
+	top:30%;
+	left:41%;
+	background-color: #FFD4AF;
+	color:#D24B38;
+	outline:none;
+	border:0;
+	cursor: pointer;
+	border-radius:5px ;
+}
+.like{
+	border:1px;
+	position:absolute;
+	top:52%;
+	left:41%;
+	height:8%;
+	width:8%;
+}
+.dislike{
+	position:absolute;
+	outline:none;
+	border:0;
+	top:52%;
+	height:8%;
+	width:8%;
+	left:51%;
+}
+.update{
+	cursor:pointer;
+	border-color: #D9AECA;
+	outline: none;
+	color:#AA5C72;
+	font-size: 22px;
+	font-family: 义启动漫体;
+	position:absolute;
+	top:80%;
+	left:17%;
+	height:10%;
+	width:10%;
+	background-color:#D2B1C4;
+	border-radius: 7px;
+}
+.download{
+	cursor:pointer;
+	z-index: 20;
+	border-color: #D9AECA;
+	outline: none;
+	color:#AA5C72;
+	font-size: 22px;
+	font-family: 义启动漫体;
+	position:absolute;
+	top:80%;
+	right:17%;
+	height:10%;
+	width:10%;
+	background-color:#D2B1C4;
+	border-radius: 7px;
+}
+.statement{
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+#div1{
+	position: absolute;
+	top:10%;
+	height:20%;
+	width:13%;
+}
+.bubble1{
+	position:absolute;
+	top:0;
+	left:0;
+}
+#div2{
+	position: absolute;
+	top:30%;
+	height:27%;
+	width:13%;
+}
+.bubble2{
+	position:absolute;
+	top:50%;
+	left:0%;
+}
+#div3{
+	position: absolute;
+	top:70%;
+	height:15%;
+	width:50%;
+}
+.bubble3{
+	position:absolute;
+	top:75%;
+	left:7%;
+}
+.bubble4{
+	position:absolute;
+	top:85%;
+	left:25%;
+}
+.bubble5{
+	position:absolute;
+	top:75%;
+	left:40%;
+}
+#div4{
+	position: absolute;
+	top:10%;
+	left:83%;
+	height:40%;
+	width:12%;
+}
+.bubble6{
+	position:absolute;
+	top:43%;
+	right:3%;
+}
+.bubble7{
+	position:absolute;
+	top:15%;
+	right:10%;
+	z-index: 2;
+}
+particle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
